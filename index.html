@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="favicon.ico">
+	<title>siber-guvenlik</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="manifest" href="manifest.json" crossOrigin="use-credentials"/>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">
+</head>
+<body class="badge-dark" onload="loadPosts();">
+	<div style="font-family: 'Quicksand';" class="container">
+		<div class="text-center pt-4">
+			<h2>Siber Güvenlik</h2>
+			<a type="button" class="btn btn-primary mt-3" href="post-add.html">Gönderi Ekle</a>
+		</div>
+		<div id="posts"></div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+	<script src="functions.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+	<title>siber-guvenlik</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">
+</head>
+<body class="badge-dark">
+	<div style="font-family: 'Quicksand';" class="container">
+		<div class="text-center pt-4">
+			<h2>Gönderi Ekle</h2>
+		</div>
+		<div>
+			<div class="row">
+				<div class="col-md-5">
+					<label class="col-form-label">Başlık:</label>
+					<input id="post_title" class="form-control" placeholder="Başlık" autofocus onkeydown="13==event.keyCode&&add()">
+				</div>
+				<div class="col-md-5 ml-auto">
+					<label class="col-form-label">Küçük Resim:</label>
+					<input id="post_img" class="form-control" placeholder="Küçük Resim" onkeydown="13==event.keyCode&&add()">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<label class="col-form-label">Yazı:</label>
+					<input id="post_content" class="form-control" placeholder="Yazı" onkeydown="13==event.keyCode&&add()">
+				</div>
+				<div class="col-md-5 ml-auto">
+					<label class="col-form-label">Alt Başlık:</label>
+					<input id="post_sub_title" class="form-control" placeholder="Alt Başlık" onkeydown="13==event.keyCode&&add()">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<label class="col-form-label">Kod:</label>
+					<input id="post_code" class="form-control" placeholder="Kod" onkeydown="13==event.keyCode&&add()">
+				</div>
+				<div class="col-md-5 ml-auto">
+					<label class="col-form-label">Link Başlık:</label>
+					<input id="post_link_title" class="form-control" placeholder="Link Başlık" onkeydown="13==event.keyCode&&add()">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<label class="col-form-label">Link:</label>
+					<input id="post_link" class="form-control" placeholder="Link" onkeydown="13==event.keyCode&&add()">
+				</div>
+				<div class="col-md-5 ml-auto">
+					<input type="submit" class="btn btn-primary form-control mt-4" onclick="add();">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+	<script src="functions.js"></script>
+</body>
+</html>
