@@ -2,13 +2,13 @@
 	"lang":"tr",
 	"name":"cyber-security",
 	"icons":[
-		{
-			"src": "pwa-152x152.png",
-			"sizes": "152x152",
-			"type": "image/png"
-		}
+	   {
+		  "src":"pwa-152x152.png",
+		  "sizes":"152x152",
+		  "type":"image/png"
+	   }
 	],
-	"start_url": "./index.html",
+	"start_url":"./index.html",
 	"display":"standalone",
 	"background_color":"#343A40"
-}
+ }
